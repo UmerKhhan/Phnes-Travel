@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="flights-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Flights - Phnes Travels</title>
+  </head>
+  <body>
+   <header>
+      <nav class="mob-nav-bar">
+            <div class="logo">
+                <img src="./Assets/logo-black.svg" alt="" />
+            </div>
+            <div class="mob-bars">
+              <i class="fa-solid fa-bars"></i>
+              <i class="fa-solid fa-x"></i>
+              <div class="nav-tags">
+                  <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="flights.html">Flights</a></li>
+                      <li><a href="hotels.html">Hotels</a></li>
+                      <li><a href="About-us.html">About Us</a></li>
+                      <li><a href="contact-us.html">Contact</a></li>
+
+                  </ul>
+              </div>
+            </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <nav class="nav-bar">
+        <div class="logo">
+          <img src="./Assets/logo.svg" alt=""/>
+        </div>
+        
+        <div class="nav-tags">
+          <ul>
+            <li><a href="index.html">Home<hr/></a></li>
+            <li><a href="flights.html">Flights<hr/></a></li>
+            <li><a href="hotels.html">Hotels<hr/></a></li>
+            <li><a href="About-us.html">About Us<hr/></a></li>
+            <li><a href="contact-us.html">Contact<hr/></a></li>
+          </ul>
+        </div>
+        <div class="nav-buttons">
+          <a href="Log-in.html"><button class="login">Login<hr/></button></a>
+          <a href="sign-up.html"><button class="signup">Sign up<hr/></button></a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="flights-hero">
+      <div class="hero-content">
+        <h1>Travel around the world</h1>
+        <p>One of the most famous web for traveling</p>
+      </div>
+
+      <div class="search-bar-container">
+        <div class="search-bar">
+          <div class="search-input">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="From" />
+          </div>
+          <div class="search-divider"></div>
+          <div class="search-input">
+            <i class="fa-solid fa-plane-arrival"></i>
+            <input type="text" placeholder="To" />
+          </div>
+          <div class="search-divider"></div>
+          <div class="search-input">
+            <i class="fa-regular fa-calendar"></i>
+            <input type="text" placeholder="Date" />
+          </div>
+          <div class="search-divider"></div>
+          <div class="search-input">
+            <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="Traveler - Class" />
+          </div>
+          <a href="flight-listing.html" style="text-decoration: none">
+            <button class="find-trip-btn">
+              Find trip now <i class="fa-solid fa-arrow-right"></i>
+            </button>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="destinations-sec">
+      <div class="sec-header">
+        <div class="sec-title">
+          <span>Plan your perfect trip</span>
+          <h2>Discover your love</h2>
+        </div>
+        <button class="see-all-btn">See all</button>
+      </div>
+
+      <div class="destinations-grid">
+        <!-- Card 1: Paris -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/paris.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>Paris</h3>
+              <span>A Paris Adventure</span>
+            </div>
+            <div class="card-price">$ 160</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+
+        <!-- Card 2: Dubai -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/Bora-Bora.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>Dubai</h3>
+              <span>An amazing journey</span>
+            </div>
+            <div class="card-price">$ 230</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+
+        <!-- Card 3: China -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/London.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>London</h3>
+              <span>An amazing journey</span>
+            </div>
+            <div class="card-price">$ 180</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+
+        <!-- Card 4: France -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/Sdyney.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>Sydney</h3>
+              <span>An amazing journey</span>
+            </div>
+            <div class="card-price">$ 146</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+
+        <!-- Card 5: Accra -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/rome.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>Rome</h3>
+              <span>Explore your roots</span>
+            </div>
+            <div class="card-price">$ 80</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+
+        <!-- Card 6: Turkey -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/dubai.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>Dubai</h3>
+              <span>Explore your roots</span>
+            </div>
+            <div class="card-price">$ 150</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+
+        <!-- Card 7: Bali -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/bali.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>Bali</h3>
+              <span>An amazing journey</span>
+            </div>
+            <div class="card-price">$ 270</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+
+        <!-- Card 8: Abuja -->
+        <div
+          class="flight-card"
+          style="background-image: url('./Assets/st-lucia.png')"
+        >
+          <div class="card-overlay">
+            <div class="card-top">
+              <h3>St Lucia</h3>
+              <span>An amazing journey</span>
+            </div>
+            <div class="card-price">$ 157</div>
+            <button class="book-btn">Book flight</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-col logo-col">
+          <div class="logo">
+            <img src="./Assets/logo.svg" alt="Phnes Travels" />
+          </div>
+          <div class="socials">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="flights.html">Flights</a></li>
+            <li><a href="hotels.html">Stays</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Our Activities</h3>
+          <ul>
+            <li><a href="#">Tour</a></li>
+            <li><a href="#">Kayaking</a></li>
+            <li><a href="#">Cruising & Sailing</a></li>
+            <li><a href="#">Multi-activities</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>About Us</h3>
+          <ul>
+            <li><a href="#">Our Story</a></li>
+            <li><a href="#">Work with us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col contact-col">
+          <h3>Contact</h3>
+          <ul>
+            <li>Address: Pe.Holandia No.205A</li>
+            <li>Millennium City, PH17</li>
+            <li>Phone: 023 456 7890</li>
+            <li>Email: phnes.travels@gmail.com</li>
+            <li>Maps: Millennium City, Accra</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

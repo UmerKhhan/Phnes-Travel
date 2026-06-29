@@ -1,0 +1,446 @@
+/* About Us Page Styles */
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; */
+}
+.mob-bars .fa-x{
+  display: none;
+  position: absolute;
+  right: 0rem;
+  z-index: 999;
+}
+.mob-nav-bar {
+  display: none;
+}
+.mob-nav-bar .nav-tags {
+  display: none;
+}
+:root {
+  --primary-color: #276968;
+  --white: #fff;
+  --accent-color: #ff6f6b;
+  --black: #000;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Montserrat Alternates;
+}
+p,
+a,
+button,
+span {
+  font-family: karla;
+}/* Flights Page Styles */
+header {
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 1.5rem;
+  width: 100vw; */
+  z-index: 99;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10rem;
+  margin: 0rem 5rem;
+}
+.nav-tags ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: row;
+  list-style: none;
+}
+.nav-tags a {
+  text-decoration: none;
+  color: var(--black);
+  transition: all 300ms ease;
+  font-size: 1rem;
+}
+.nav-bar li a hr {
+  width: 0%;
+  opacity: 0;
+  transition: width 300ms ease, opacity 600ms ease;
+  opacity: 0;
+  border: 1px solid var(--primary-color);
+}
+.nav-bar li a:hover {
+  color: var(--primary-color);
+}
+.nav-bar li a:hover hr {
+  opacity: 1;
+  width: 100%;
+}
+.nav-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: row;
+}
+.nav-buttons .login {
+  background-color: transparent;
+  border: none;
+  color: var(--black);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.nav-buttons .signup{
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--white);
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+.nav-buttons .login hr {
+  border: 1px solid var(--black);
+}
+.nav-buttons .signup hr {
+  border: 1px solid var(--white);
+}
+.nav-buttons button hr{
+  opacity: 0;
+  width: 0rem;
+  transition: width 300ms ease, opacity 600ms ease;
+}
+
+.nav-buttons button:hover hr {
+  opacity: 1;
+  width: 100%;
+}
+/* Hero Section */
+.about-hero {
+  background-image: url("./Assets/about-us-bg-hero.png");
+  background-size: cover;
+  background-position: center;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10%;
+  position: relative;
+}
+
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+/* About Phnes. Travels Section */
+.about-phnes {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10%;
+  gap: 4rem;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #181e4b;
+  margin-bottom: 2rem;
+}
+
+.about-text p {
+  font-size: 1rem;
+  color: #5e6282;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
+.about-image {
+  flex: 1;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  text-align: center;
+  padding: 5rem 10%;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  color: #181e4b;
+  margin-bottom: 1rem;
+}
+
+.section-header p {
+  font-size: 1rem;
+  color: #5e6282;
+  margin-bottom: 4rem;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.icon-box {
+  width: 100px;
+  height: 100px;
+  /* background-color: #f0f0f0; */ /* Optional: background for icon */
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon-box img {
+  width: 60%;
+  height: auto;
+}
+
+.feature-item h3 {
+  font-size: 1.1rem;
+  color: #181e4b;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+/* Meet Our Teams Section */
+.meet-team {
+  padding: 5rem 10%;
+  text-align: left;
+}
+
+.meet-team .section-header {
+  text-align: left;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.team-member {
+  text-align: left;
+}
+
+.member-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.member-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1.2rem;
+  color: #181e4b;
+  margin-bottom: 0.5rem;
+}
+
+.team-member p {
+  font-size: 0.9rem;
+  color: #5e6282;
+}
+
+/* Activities Icons Section (Bottom) */
+.activities-icons {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 10%;
+  align-items: center;
+}
+
+.activity-icon {
+  text-align: center;
+  color: #ccc;
+}
+
+.activity-icon p {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 4rem 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr 1.5fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-col h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  opacity: 1;
+}
+
+.logo-col .logo img {
+  height: 40px; /* Adjust based on logo SVG */
+  margin-bottom: 1.5rem;
+  filter: brightness(0) invert(1); /* Make logo white if it's not */
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  color: var(--white);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.socials a:hover {
+  transform: translateY(-3px);
+}
+
+.contact-col li {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-phnes {
+    flex-direction: column;
+  }
+      .mob-nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .logo img {
+    height: 3rem;
+  }
+  .mob-bars {
+    font-size: 1.5rem;
+  }
+  header {
+    position: relative;
+    top: 0;
+    width: 100%;
+
+  }
+  .mob-nav-bar .nav-tags{
+    display: none;
+  }
+  .mob-nav-bar .nav-tags ul{
+    flex-direction: column;
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background: var(--white);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0px 1rem 5px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    gap: 2rem;
+  }
+  .mob-nav-bar .nav-tags ul li{
+
+    width: 80%;
+
+    text-align: center; 
+
+  }
+  .mob-nav-bar ul a{
+    display: block;
+    padding: 0.5rem;
+    color: var(--black);
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+    font-size: 1.2rem;
+  }
+  .nav-bar {
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+    display: none;
+  }
+
+  .about-hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .activities-icons {
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  .footer-content {
+grid-template-columns: 1fr 1fr;
+text-align: center;
+}
+}
